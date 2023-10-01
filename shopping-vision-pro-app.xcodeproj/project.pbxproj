@@ -33,6 +33,7 @@
 		80B908BB2AC6C1B500311E8B /* FruitCakeSlice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 80B908B92AC6C1B500311E8B /* FruitCakeSlice.usdz */; };
 		80B908BC2AC6C1B500311E8B /* AirForce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 80B908BA2AC6C1B500311E8B /* AirForce.usdz */; };
 		80B908BE2AC72ACE00311E8B /* AirForce1XCA.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 80B908BD2AC72ACE00311E8B /* AirForce1XCA.usdz */; };
+		80B908C02AC9BD9D00311E8B /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B908BF2AC9BD9D00311E8B /* ProductCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		80B908B92AC6C1B500311E8B /* FruitCakeSlice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = FruitCakeSlice.usdz; sourceTree = "<group>"; };
 		80B908BA2AC6C1B500311E8B /* AirForce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = AirForce.usdz; sourceTree = "<group>"; };
 		80B908BD2AC72ACE00311E8B /* AirForce1XCA.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = AirForce1XCA.usdz; sourceTree = "<group>"; };
+		80B908BF2AC9BD9D00311E8B /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				800BA2AD2ABD8E8F00714332 /* SampleCardListScreen.swift */,
 				800BA2BE2AC0178400714332 /* FruitCakeCardView.swift */,
+				80B908BF2AC9BD9D00311E8B /* ProductCardView.swift */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				800BA2B32ABE7B6F00714332 /* Shop.swift in Sources */,
 				8034B97C2AC5688600D391E9 /* Model3DSpaceView.swift in Sources */,
 				800BA2C62AC0216100714332 /* ProductDetailScreen.swift in Sources */,
+				80B908C02AC9BD9D00311E8B /* ProductCardView.swift in Sources */,
 				8034B9702AC1406A00D391E9 /* ProductSpace.swift in Sources */,
 				800BA2C12AC0184E00714332 /* SampleCardListScreenContents.swift in Sources */,
 				8034B97A2AC5632D00D391E9 /* CubeContainerViewModel.swift in Sources */,

@@ -38,20 +38,24 @@ struct ProductDetailScreen: View {
         HStack(alignment: .top) {
             Spacer()
             // 左側のサムネと画像一覧
+            // TODO: 画像サイズがTabViewの中だとうまく決まらないので調整
             VStack(alignment: .leading, spacing: 24) {
                 // スワイプできるサムネ
                 TabView {
                     ForEach(product.productImageNames, id: \.self) { imageName in
+                        // TODO: AsyncImage
                         Image(imageName)
                           .resizable()
                           .aspectRatio(contentMode: .fill)
-                          .frame(width: 400, height: 400)
+//                          .frame(width: 400, height: 400)
+                          .frame(width: 360, height: 390)
                         // TODO: cornerRadiusが効いてない
                           .cornerRadius(18)
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
-                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+//                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+//                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
                 
                 ScrollView {
                     // 画像一覧

@@ -44,7 +44,7 @@ struct SampleCardListScreen: View {
                         ForEach(products) { product in
                             // MARK: NavigationLink
                             NavigationLink(value: product) {
-                                FruitCakeCardView()
+                                ProductCardView(product: product)
                                 /// @see: Elevate your windowed app for spatial computing
                                 /// https://developer.apple.com/videos/play/wwdc2023/10110
                                     .padding(20)
