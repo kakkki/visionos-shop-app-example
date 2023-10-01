@@ -10,7 +10,7 @@ struct Product: Identifiable, Hashable, Codable {
     let productName: String
     let description: String
     let price: Int
-    let itemImages: [String]
+    let productImageNames: [String]
     
     var id: String {
         return productId

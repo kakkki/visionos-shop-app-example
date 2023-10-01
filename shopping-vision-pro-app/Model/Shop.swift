@@ -11,7 +11,7 @@ struct Shop: Identifiable, Hashable, Codable {
     let shopId: String
     let shopName: String
     let isFollowed: Bool
-    let shopImages: [String]
+    let shopImageNames: [String]
     let products: [Product]
     
     var id: String {
