@@ -1,0 +1,92 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    def "FruitCakeSliceTmp" (
+        active = true
+        references = @FruitCakeSlice.usdz@
+    )
+    {
+        quatf xformOp:orient = (1, 0, 0, 0)
+        float3 xformOp:scale = (0.01, 0.01, 0.01)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Looks"
+        {
+            over "g1"
+            {
+                token inputs:diffuseColor_texture:varname (
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-392.125, 86.5)
+                            float2 sizeInSubgraph = (250, 53)
+                        }
+                    }
+                )
+                token inputs:normal_texture:varname (
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-111.625, 86.5)
+                            float2 sizeInSubgraph = (220.5, 53)
+                        }
+                    }
+                )
+                token inputs:occlusion_texture:varname (
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (184.875, 86.5)
+                            float2 sizeInSubgraph = (236.5, 53)
+                        }
+                    }
+                )
+                token outputs:mtlx:surface
+                token outputs:realitykit:vertex
+                float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (426.375, 109.5)
+                float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+
+                over "surfaceShader"
+                {
+                    float inputs:opacity = 0.6
+                }
+            }
+        }
+
+        def RealityKitComponent "Collider"
+        {
+            uint group = 1
+            uniform token info:id = "RealityKit.Collider"
+            uint mask = 4294967295
+            token type = "Default"
+
+            def RealityKitStruct "Shape"
+            {
+                float3 extent = (12.505131, 8.877, 8.988777)
+                float radius = 7.9383926
+                token shapeType = "Box"
+            }
+        }
+
+        over "Geom"
+        {
+            over "g0"
+            {
+                quatf xformOp:orient = (1, 0, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                float3 xformOp:translate = (0.16325058, -4.2880087, -0.009808316)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+        }
+
+        def RealityKitComponent "InputTarget"
+        {
+            uniform token info:id = "RealityKit.InputTarget"
+        }
+    }
+}
+

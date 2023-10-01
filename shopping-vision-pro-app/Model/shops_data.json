@@ -1,0 +1,86 @@
+[
+  {
+    "shopId": "shop_001",
+    "shopName": "Nike Shop",
+    "isFollowed": true,
+    "shopImages": [
+      "nikeShopImage1_url",
+      "nikeShopImage2_url"
+    ],
+    "products": [
+      {
+        "productId": "product_001",
+        "productName": "Nike Air Force 1",
+        "description": "クラシックなデザインのスニーカー。",
+        "price": 10000,
+        "itemImages": [
+          "airForce1_image1_url",
+          "airForce1_image2_url"
+        ]
+      },
+      {
+        "productId": "product_002",
+        "productName": "Nike Pegasus",
+        "description": "ランニングに適した軽量スニーカー。",
+        "price": 12000,
+        "itemImages": [
+          "pegasus_image1_url",
+          "pegasus_image2_url"
+        ]
+      }
+    ]
+  },
+  {
+    "shopId": "shop_002",
+    "shopName": "Cake Bakery",
+    "isFollowed": false,
+    "shopImages": [
+      "cakeBakeryImage1_url",
+      "cakeBakeryImage2_url"
+    ],
+    "products": [
+      {
+        "productId": "product_003",
+        "productName": "Fruit Cake",
+        "description": "フルーツたっぷりのケーキ。",
+        "price": 3000,
+        "itemImages": [
+          "fruitCake_image1_url",
+          "fruitCake_image2_url"
+        ]
+      },
+      {
+        "productId": "product_004",
+        "productName": "Lemon Meringue Pie",
+        "description": "レモンクリームとメレンゲの甘酸っぱいパイ。",
+        "price": 2500,
+        "itemImages": [
+          "lemonMeringuePie_image1_url",
+          "lemonMeringuePie_image2_url"
+        ]
+      }
+    ]
+  },
+  {
+    "shopId": "shop_003",
+    "shopName": "RockStore",
+    "isFollowed": true,
+    "shopImages": [
+      "rockStoreImage1_url",
+      "rockStoreImage2_url"
+    ],
+    "products": [
+      {
+        "productId": "product_005",
+        "productName": "Rock",
+        "description": "自然な形状の美しい岩。",
+        "price": 500,
+        "itemImages": [
+          "rock_image1_url",
+          "rock_image2_url"
+        ]
+      }
+    ]
+  }
+]
+
