@@ -80,9 +80,11 @@ struct SampleCardListScreen: View {
                 .padding(.top, 24)
                 .padding(.horizontal, 48)
             }
-            .navigationTitle("Hoge Hoge")
+            .navigationTitle("今日のおすすめ商品")
             .navigationDestination(for: Product.self) { product in
                 ProductDetailScreen(product: product)
+                    .navigationTitle(product.productName)
+
                 
 //                StatsGrid().padding().background(.regularMaterial, in: .rect(cornerRadius: 12))
                 

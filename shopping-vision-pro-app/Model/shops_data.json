@@ -10,7 +10,7 @@
     "products": [
       {
         "productId": "product_001",
-        "productName": "Nike Air Force 1",
+        "productName": "Nike Air Force 1 クラシックなデザインのスニーカー。",
         "description": "クラシックなデザインのスニーカー。",
         "price": 10000,
         "productUSDZ": "AirForce",
@@ -63,7 +63,7 @@
     "products": [
       {
         "productId": "product_003",
-        "productName": "Fruit Cake",
+        "productName": "ラムレーズンのフルーツケーキ",
         "description": "フルーツたっぷりのケーキ。",
         "price": 3000,
         "productUSDZ": "FruitCakeSlice",

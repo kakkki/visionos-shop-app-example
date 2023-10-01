@@ -38,8 +38,7 @@ struct ProductDetailScreen: View {
         HStack(alignment: .top) {
             Spacer()
             // 左側のサムネと画像一覧
-            
-            VStack(alignment: .leading, spacing: 12) {
+            VStack(alignment: .leading, spacing: 24) {
                 // スワイプできるサムネ
                 TabView {
                     ForEach(product.productImageNames, id: \.self) { imageName in
@@ -47,6 +46,7 @@ struct ProductDetailScreen: View {
                           .resizable()
                           .aspectRatio(contentMode: .fill)
                           .frame(width: 400, height: 400)
+                        // TODO: cornerRadiusが効いてない
                           .cornerRadius(18)
                     }
                 }
@@ -80,7 +80,7 @@ struct ProductDetailScreen: View {
                 }
                 
                 HStack() {
-                    Text("\(product.price)")
+                    Text("\(product.price)円")
                         .font(.largeTitle)
                     Spacer()
                 }
