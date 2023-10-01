@@ -37,14 +37,20 @@ struct ProductDetailScreen: View {
     var body: some View {
         HStack(alignment: .top) {
             Spacer()
-            
             // 左側のサムネと画像一覧
             VStack(alignment: .leading, spacing: 12) {
-                Image(product.productImageNames[0])
-                  .resizable()
-                  .aspectRatio(contentMode: .fill)
-                  .frame(width: 400, height: 400)
-                  .cornerRadius(18)
+                // スワイプできるサムネ
+                TabView {
+                    ForEach(product.productImageNames, id: \.self) { imageName in
+                        Image(imageName)
+                          .resizable()
+                          .aspectRatio(contentMode: .fill)
+                          .frame(width: 400, height: 400)
+                          .cornerRadius(18)
+                    }
+                }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
                 
                 // 画像一覧
                 LazyVGrid(columns: columns) {
