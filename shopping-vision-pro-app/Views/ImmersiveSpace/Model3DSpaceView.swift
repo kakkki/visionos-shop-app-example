@@ -21,6 +21,7 @@ struct Model3DSpaceView: View {
     // @State var cubeEntities: [Entity] = []
     
     func addProductEntity1(product: Product) async {
+        guard entity1 == nil else { return }
         // AirForce.usdz
         let entityAirForce = await viewModel.addEntityAsync(
 //            usdzName: "AirForce",
@@ -34,6 +35,7 @@ struct Model3DSpaceView: View {
     }
 
     func addProductEntity2(product: Product) async {
+        guard entity2 == nil else { return }
         // PegasusTrail.usdz
         let entityPegasusTrail = await viewModel.addEntityAsync(
 //            usdzName: "PegasusTrail",
@@ -47,6 +49,7 @@ struct Model3DSpaceView: View {
     }
     
     func addProductEntity3(product: Product) async {
+        guard entity3 == nil else { return }
         // PegasusTrail.usdz
         let entityPegasusTrail = await viewModel.addEntityAsync(
             usdzName: product.productUSDZ,
