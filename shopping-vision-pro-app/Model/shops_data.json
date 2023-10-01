@@ -13,6 +13,7 @@
         "productName": "Nike Air Force 1",
         "description": "クラシックなデザインのスニーカー。",
         "price": 10000,
+        "productUSDZ": "FruitCakeSlice",
         "productImageNames": [
           "airForce1_image1_url",
           "airForce1_image2_url"
@@ -23,6 +24,7 @@
         "productName": "Nike Pegasus",
         "description": "ランニングに適した軽量スニーカー。",
         "price": 12000,
+        "productUSDZ": "FruitCakeSlice",
         "productImageNames": [
           "pegasus_image1_url",
           "pegasus_image2_url"
@@ -44,9 +46,16 @@
         "productName": "Fruit Cake",
         "description": "フルーツたっぷりのケーキ。",
         "price": 3000,
+        "productUSDZ": "FruitCakeSlice",
         "productImageNames": [
-          "FruitCake",
-          "fruitCake_image2_url"
+            "FruitCakeSlice_A_001",
+            "FruitCakeSlice_A_002",
+            "FruitCakeSlice_A_003",
+            "FruitCakeSlice_A_004",
+            "FruitCakeSlice_B_001",
+            "FruitCakeSlice_B_002",
+            "FruitCakeSlice_B_003",
+            "FruitCakeSlice_B_004"
         ]
       },
       {
@@ -54,6 +63,7 @@
         "productName": "Lemon Meringue Pie",
         "description": "レモンクリームとメレンゲの甘酸っぱいパイ。",
         "price": 2500,
+        "productUSDZ": "FruitCakeSlice",
         "productImageNames": [
           "FruitCakeSlice_A_001",
           "FruitCakeSlice_A_002",
@@ -63,7 +73,6 @@
           "FruitCakeSlice_B_002",
           "FruitCakeSlice_B_003",
           "FruitCakeSlice_B_004"
-
         ]
       }
     ]
@@ -82,6 +91,7 @@
         "productName": "Rock",
         "description": "自然な形状の美しい岩。",
         "price": 500,
+        "productUSDZ": "FruitCakeSlice",
         "productImageNames": [
           "rock_image1_url",
           "rock_image2_url"

@@ -24,13 +24,15 @@ class SpaceViewModel {
 @Observable
 class Model3DSpaceViewModel {
     
-    typealias Callback = () async -> Void
+    typealias Callback = (Product) async -> Void
 
     var realityViewContent: RealityViewContent?
 
     var callback1: Callback?
     
     var callback2: Callback?
+    
+    var callback3: Callback?
     
     private var contentEntity = Entity()
 
@@ -60,8 +62,12 @@ class Model3DSpaceViewModel {
     }
     
     @MainActor
-    func addEntityAsync(name: String, posision: SIMD3<Float>) async -> Entity? {
-        print("debug0000 addEntityAsync : \(name)")
+    func addEntityAsync(
+        usdzName: String,
+        entityName: String,
+        posision: SIMD3<Float>
+    ) async -> Entity? {
+        print("debug0000 addEntityAsync : \(usdzName)")
         
         do {
             
@@ -93,7 +99,7 @@ class Model3DSpaceViewModel {
             
             // これも動いた
 //            let entity = try await Entity(named: "AirForce", in: RealityKitContent.realityKitContentBundle)x
-            let entity = try await Entity(named: name, in: RealityKitContent.realityKitContentBundle)
+            let entity = try await Entity(named: usdzName, in: RealityKitContent.realityKitContentBundle)
 
             
             print("debug0000 entity 001 : \(entity.debugDescription)")
@@ -120,7 +126,7 @@ class Model3DSpaceViewModel {
 //            let entity = try await ModelEntity(named: "CakeScene", in: realityKitContentBundle)
 //            let entity = try await ModelEntity(named: "FruitCakeSlice")
 
-            entity.name = name
+            entity.name = entityName
             entity.position = posision
             // これだとドラッグできる
             entity.components.set(

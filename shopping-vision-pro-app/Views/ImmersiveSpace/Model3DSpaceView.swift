@@ -12,15 +12,20 @@ struct Model3DSpaceView: View {
     
     @Environment(Model3DSpaceViewModel.self) private var viewModel
     
-    @State var cubeEntities: [Entity] = []
     @State var entity1: Entity!
     @State var entity2: Entity!
+    @State var entity3: Entity!
     @State var isStart: Bool = true
 
-    func addCube1() async {
+    // 一旦使用してない
+    // @State var cubeEntities: [Entity] = []
+    
+    func addProductEntity1(product: Product) async {
         // AirForce.usdz
         let entityAirForce = await viewModel.addEntityAsync(
-            name: "AirForce", 
+//            usdzName: "AirForce",
+            usdzName: product.productUSDZ,
+            entityName: "Entity1",
             posision: SIMD3(x: 0, y: 1, z: -1)
         )
         if let entityAirForce {
@@ -28,25 +33,36 @@ struct Model3DSpaceView: View {
         }
     }
 
-    func addCube2() async {
+    func addProductEntity2(product: Product) async {
         // PegasusTrail.usdz
         let entityPegasusTrail = await viewModel.addEntityAsync(
-            name: "PegasusTrail",
+//            usdzName: "PegasusTrail",
+            usdzName: product.productUSDZ,
+            entityName: "Entity2",
             posision: SIMD3(x: 0.5, y: 1, z: -1)
         )
         if let entityPegasusTrail {
             entity2 = entityPegasusTrail
         }
     }
+    
+    func addProductEntity3(product: Product) async {
+        // PegasusTrail.usdz
+        let entityPegasusTrail = await viewModel.addEntityAsync(
+            usdzName: product.productUSDZ,
+            entityName: "Entity3",
+            posision: SIMD3(x: 1, y: 1, z: -1)
+        )
+        if let entityPegasusTrail {
+            entity3 = entityPegasusTrail
+        }
+    }
+
 
     var body: some View {
 
         RealityView { content in
             content.add(viewModel.setupContentEntity())
-            // AirForce.usdz
-            await addCube1()
-            // PegasusTrail.usdz
-            await addCube2()
         } update: { content in
             print("debug0000 RealityView update")
         }
@@ -62,23 +78,36 @@ struct Model3DSpaceView: View {
                     let dragLocation = value.convert(
                         value.location3D, from: .local,
                         to: value.entity.parent!)
-                    if value.entity.name == "FruitCakeSlice" {
+
+//                    if value.entity.name == "FruitCakeSlice" {
+//                        entity2.position = dragLocation
+//                    }
+//                    if value.entity.name == "AirForce" {
+//                        entity1.position = dragLocation
+//                    }
+//                    if value.entity.name == "PegasusTrail" {
+//                        entity2.position = dragLocation
+//                    }
+                    
+                    if value.entity.name == "Entity1" {
                         entity1.position = dragLocation
                     }
-                    if value.entity.name == "AirForce" {
-                        entity1.position = dragLocation
-                    }
-                    if value.entity.name == "PegasusTrail" {
+                    if value.entity.name == "Entity2" {
                         entity2.position = dragLocation
                     }
+                    if value.entity.name == "Entity3" {
+                        entity3.position = dragLocation
+                    }
+
                 }
                 .onEnded { _ in
                     self.isStart = true
                 }
         )
         .onAppear {
-            self.viewModel.callback1 = addCube1
-            self.viewModel.callback2 = addCube2
+            self.viewModel.callback1 = addProductEntity1
+            self.viewModel.callback2 = addProductEntity2
+            self.viewModel.callback3 = addProductEntity3
         }
     }
 }

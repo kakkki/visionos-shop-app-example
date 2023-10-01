@@ -105,19 +105,34 @@ struct ProductDetailScreen: View {
                     }
                     .toggleStyle(.button)
                 
-                Button("add content") {
+                Button("add content 1") {
                     print("debug0000 add content addContentCount : \(addContentCount)")
                     Task {
-                        if addContentCount == 0 {
-                            print("debug0000 before model3DSpaceViewModel.callback1!()")
-                            await model3DSpaceViewModel.callback1!()
-                        } else {
-                            print("debug0000 before model3DSpaceViewModel.callback2!()")
-                            await model3DSpaceViewModel.callback2!()
-                        }
-                        addContentCount += 1
+//                        if addContentCount == 0 {
+//                            print("debug0000 before model3DSpaceViewModel.callback1!()")
+//                            await model3DSpaceViewModel.callback1!()
+//                        } else {
+//                            print("debug0000 before model3DSpaceViewModel.callback2!()")
+//                            await model3DSpaceViewModel.callback2!()
+//                        }
+//                        addContentCount += 1
+                        await model3DSpaceViewModel.callback1!(product)
                     }
                 }
+
+                Button("add content 2") {
+                    Task {
+                        await model3DSpaceViewModel.callback2!(product)
+                    }
+                }
+
+                Button("add content 3") {
+                    Task {
+//                        await model3DSpaceViewModel.callback2!(product)
+                        await model3DSpaceViewModel.callback3!(product)
+                    }
+                }
+
                 
                 Spacer()
             }

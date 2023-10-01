@@ -11,6 +11,7 @@ struct Product: Identifiable, Hashable, Codable {
     let description: String
     let price: Int
     let productImageNames: [String]
+    let productUSDZ: String
     
     var id: String {
         return productId
