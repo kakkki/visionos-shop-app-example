@@ -24,8 +24,6 @@ struct ProductDetailScreen: View {
 
     @Environment(Model3DSpaceViewModel.self) private var model3DSpaceViewModel
     
-    @State var addContentCount = 0
-    
     // 4列のGridで表示する
     let columns = [
         GridItem(.flexible()),
@@ -131,8 +129,12 @@ struct ProductDetailScreen: View {
                     }
                 }
 
-                // TODO: Entity削除ボタン
-                
+                Button("3DModelを非表示") {
+                    if let callback = model3DSpaceViewModel.removeEntityCallback {
+                        callback()
+                    }
+                }
+
                 Spacer()
             }
             
@@ -141,6 +143,11 @@ struct ProductDetailScreen: View {
         .padding(.horizontal, 98)
         .onAppear {
             LogUtils.prettyPrint(product)
+        }
+        .onDisappear {
+            if let callback = model3DSpaceViewModel.removeEntityCallback {
+                callback()
+            }
         }
     }
 }

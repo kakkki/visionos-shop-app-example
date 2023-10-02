@@ -55,6 +55,23 @@ struct Model3DSpaceView: View {
             entity3 = entityPegasusTrail
         }
     }
+    
+    func removeAllEntities() {
+        if let entity1 {
+            entity1.removeFromParent()
+            self.entity1 = nil
+        }
+        
+        if let entity2 {
+            entity2.removeFromParent()
+            self.entity2 = nil
+        }
+
+        if let entity3 {
+            entity3.removeFromParent()
+            self.entity3 = nil
+        }
+    }
 
     var body: some View {
 
@@ -95,6 +112,7 @@ struct Model3DSpaceView: View {
             self.viewModel.callback1 = addProductEntity1
             self.viewModel.callback2 = addProductEntity2
             self.viewModel.callback3 = addProductEntity3
+            self.viewModel.removeEntityCallback = removeAllEntities
         }
     }
 }

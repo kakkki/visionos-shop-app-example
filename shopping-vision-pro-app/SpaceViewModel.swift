@@ -34,6 +34,8 @@ class Model3DSpaceViewModel {
     
     var callback3: Callback?
     
+    var removeEntityCallback: (() -> Void)?
+    
     private var contentEntity = Entity()
 
     func setupContentEntity() -> Entity {
