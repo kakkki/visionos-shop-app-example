@@ -130,27 +130,28 @@ class Model3DSpaceViewModel {
 
             entity.name = entityName
             entity.position = posision
-            // これだとドラッグできる
-            entity.components.set(
-                CollisionComponent(
-                    shapes: [ShapeResource.generateSphere(radius: 20)],
-                    isStatic: true
-                )
-            )
-            entity.components.set(InputTargetComponent())
-            print("debug0000 001 contentEntity.debugDescription : \(contentEntity.debugDescription)")
-
-            // これだとドラッグできない
 //            entity.components.set(
 //                CollisionComponent(
-//                    shapes: [ShapeResource.generateBox(size: SIMD3<Float>(repeating: 0.5))],
+//                    shapes: [ShapeResource.generateSphere(radius: 20)],
 //                    isStatic: true
 //                )
 //            )
-        
-            
+            entity.components.set(
+                CollisionComponent(
+                    shapes: [ShapeResource.generateBox(size: SIMD3(
+                        x: 15.0,
+                        y: 15.0,
+                        z: 15.0
+                    ))],
+                    isStatic: true
+                )
+            )
+
+            entity.components.set(InputTargetComponent())
             entity.components.set(HoverEffectComponent())
             
+            print("debug0000 001 contentEntity.debugDescription : \(contentEntity.debugDescription)")
+
             contentEntity.addChild(entity)
             return entity
         } catch  {

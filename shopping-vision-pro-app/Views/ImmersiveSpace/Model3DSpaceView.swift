@@ -139,10 +139,10 @@ struct Model3DSpaceView: View {
                 .targetedToAnyEntity()
                 .onChanged { value in
                     print("debug0000 DragGesture onChanged")
-                    if self.isStart {
-                        isStart = false
-                        return
-                    }
+//                    if self.isStart {
+//                        isStart = false
+//                        return
+//                    }
                     let dragLocation = value.convert(
                         value.location3D, from: .local,
                         to: value.entity.parent!)
