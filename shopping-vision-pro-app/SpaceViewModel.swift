@@ -36,6 +36,10 @@ class Model3DSpaceViewModel {
     
     var removeEntityCallback: (() -> Void)?
     
+    var startRotation: (() -> Void)?
+    
+    var stopRotation: (() -> Void)?
+    
     private var contentEntity = Entity()
 
     func setupContentEntity() -> Entity {
@@ -123,10 +127,6 @@ class Model3DSpaceViewModel {
 //            let entity = entityScene.findEntity(named: "Sphere")!
             // いけた！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 
-            
-            
-//            let entity = try await ModelEntity(named: "CakeScene", in: realityKitContentBundle)
-//            let entity = try await ModelEntity(named: "FruitCakeSlice")
 
             entity.name = entityName
             entity.position = posision
@@ -137,10 +137,6 @@ class Model3DSpaceViewModel {
                     isStatic: true
                 )
             )
-//            entity.components.set(
-//                CollisionComponent(shapes: [.])
-//            )
-
             entity.components.set(InputTargetComponent())
             print("debug0000 001 contentEntity.debugDescription : \(contentEntity.debugDescription)")
 
@@ -151,21 +147,11 @@ class Model3DSpaceViewModel {
 //                    isStatic: true
 //                )
 //            )
-            //            entity.components.set(InputTargetComponent(allowedInputTypes: .indirect))
-
+        
             
-            
-            print("debug0000 002 contentEntity.debugDescription : \(contentEntity.debugDescription)")
-            
-            // 
             entity.components.set(HoverEffectComponent())
-
+            
             contentEntity.addChild(entity)
-            
-            print("debug0000 contentEntity.debugDescription : \(contentEntity.debugDescription)")
-            print("debug0000 entity.debugDescription : \(entity.debugDescription)")
-            print("debug0000 entity.isEnabledInHierarchy : \(entity.isEnabledInHierarchy)")
-            
             return entity
         } catch  {
             return nil

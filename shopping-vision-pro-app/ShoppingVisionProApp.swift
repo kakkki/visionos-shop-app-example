@@ -54,6 +54,9 @@ struct ShoppingVisionProApp: App {
             Model3DSpaceView()
                 .environment(model3DSpaceViewModel)
         }
-
+    }
+    
+    init() {
+        RotationSystem.registerSystem()
     }
 }

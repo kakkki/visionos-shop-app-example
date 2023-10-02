@@ -58,7 +58,7 @@
         "productName": "ラムレーズンのフルーツケーキ",
         "description": "フルーツたっぷりのケーキ。",
         "price": 3000,
-        "productUSDZ": "FruitCakeSlice",
+        "productUSDZ": "RobotWalkIdle",
         "productImageNames": [
             "FruitCakeSlice_A_001",
             "FruitCakeSlice_A_002",

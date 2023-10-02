@@ -36,7 +36,6 @@ struct ProductDetailScreen: View {
         HStack(alignment: .top) {
             Spacer()
             // 左側のサムネと画像一覧
-            // TODO: 画像サイズがTabViewの中だとうまく決まらないので調整
             VStack(alignment: .leading, spacing: 24) {
                 // スワイプできるサムネ
                 TabView {
@@ -45,8 +44,6 @@ struct ProductDetailScreen: View {
                         Image(imageName)
                           .resizable()
                           .aspectRatio(contentMode: .fill)
-                          .cornerRadius(18)
-                        // TODO: cornerRadiusが効いてない
                     }
                 }
                 .cornerRadius(18)
@@ -132,6 +129,20 @@ struct ProductDetailScreen: View {
                 Button("3DModelを非表示") {
                     if let callback = model3DSpaceViewModel.removeEntityCallback {
                         callback()
+                    }
+                }
+                
+                HStack(spacing: 24) {
+                    Button("3DModelを回転") {
+                        if let startRotation = model3DSpaceViewModel.startRotation {
+                            startRotation()
+                        }
+                    }
+
+                    Button("回転を止める") {
+                        if let stopRotation = model3DSpaceViewModel.stopRotation {
+                            stopRotation()
+                        }
                     }
                 }
 

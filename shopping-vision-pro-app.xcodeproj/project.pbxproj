@@ -25,7 +25,7 @@
 		8034B97A2AC5632D00D391E9 /* CubeContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8034B9792AC5632D00D391E9 /* CubeContainerViewModel.swift */; };
 		8034B97C2AC5688600D391E9 /* Model3DSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8034B97B2AC5688600D391E9 /* Model3DSpaceView.swift */; };
 		80795DCD2ABD1F0A00B156CD /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 80795DCC2ABD1F0A00B156CD /* RealityKitContent */; };
-		80795DCF2ABD1F0A00B156CD /* shopping_vision_pro_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80795DCE2ABD1F0A00B156CD /* shopping_vision_pro_appApp.swift */; };
+		80795DCF2ABD1F0A00B156CD /* ShoppingVisionProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80795DCE2ABD1F0A00B156CD /* ShoppingVisionProApp.swift */; };
 		80795DD12ABD1F0A00B156CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80795DD02ABD1F0A00B156CD /* ContentView.swift */; };
 		80795DD32ABD1F0A00B156CD /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80795DD22ABD1F0A00B156CD /* ImmersiveView.swift */; };
 		80795DD52ABD1F0C00B156CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80795DD42ABD1F0C00B156CD /* Assets.xcassets */; };
@@ -36,6 +36,7 @@
 		80B908C02AC9BD9D00311E8B /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B908BF2AC9BD9D00311E8B /* ProductCardView.swift */; };
 		80B908C22ACA521600311E8B /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B908C12ACA521600311E8B /* TabViewModel.swift */; };
 		80B908C42ACA53B600311E8B /* tmp_shops_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 80B908C32ACA53B600311E8B /* tmp_shops_data.json */; };
+		80B908C62ACABB5700311E8B /* RotationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B908C52ACABB5700311E8B /* RotationComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +59,7 @@
 		8034B97B2AC5688600D391E9 /* Model3DSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3DSpaceView.swift; sourceTree = "<group>"; };
 		80795DC72ABD1F0A00B156CD /* shopping-vision-pro-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shopping-vision-pro-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80795DCB2ABD1F0A00B156CD /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
-		80795DCE2ABD1F0A00B156CD /* shopping_vision_pro_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopping_vision_pro_appApp.swift; sourceTree = "<group>"; };
+		80795DCE2ABD1F0A00B156CD /* ShoppingVisionProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingVisionProApp.swift; sourceTree = "<group>"; };
 		80795DD02ABD1F0A00B156CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		80795DD22ABD1F0A00B156CD /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		80795DD42ABD1F0C00B156CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		80B908BF2AC9BD9D00311E8B /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		80B908C12ACA521600311E8B /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
 		80B908C32ACA53B600311E8B /* tmp_shops_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tmp_shops_data.json; sourceTree = "<group>"; };
+		80B908C52ACABB5700311E8B /* RotationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,9 +190,10 @@
 			isa = PBXGroup;
 			children = (
 				8034B9692AC135B500D391E9 /* Resources */,
-				80795DCE2ABD1F0A00B156CD /* shopping_vision_pro_appApp.swift */,
+				80795DCE2ABD1F0A00B156CD /* ShoppingVisionProApp.swift */,
 				80B908C12ACA521600311E8B /* TabViewModel.swift */,
 				8034B9712AC1701900D391E9 /* SpaceViewModel.swift */,
+				80B908C52ACABB5700311E8B /* RotationComponent.swift */,
 				800BA2BB2AC0173400714332 /* Views */,
 				800BA2B82ABE7F2200714332 /* Utils */,
 				800BA2AF2ABE7AFF00714332 /* Model */,
@@ -300,8 +303,9 @@
 				800BA2BD2AC0175000714332 /* StatsGrid.swift in Sources */,
 				800BA2AE2ABD8E8F00714332 /* SampleCardListScreen.swift in Sources */,
 				800BA2BF2AC0178400714332 /* FruitCakeCardView.swift in Sources */,
+				80B908C62ACABB5700311E8B /* RotationComponent.swift in Sources */,
 				800BA2B72ABE7BAA00714332 /* DataRepository.swift in Sources */,
-				80795DCF2ABD1F0A00B156CD /* shopping_vision_pro_appApp.swift in Sources */,
+				80795DCF2ABD1F0A00B156CD /* ShoppingVisionProApp.swift in Sources */,
 				800BA2BA2ABE7F2E00714332 /* LogUtils.swift in Sources */,
 				8034B9722AC1701900D391E9 /* SpaceViewModel.swift in Sources */,
 				8034B9782AC5622500D391E9 /* CubeSpaceView.swift in Sources */,
