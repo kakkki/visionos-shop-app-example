@@ -17,7 +17,36 @@
         "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
         "Root",
         "Cake",
-        "FruitCakeSlice"
+        "FruitCakeSliceTmp",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
+        "Root",
+        "Cake",
+        "FruitCakeSlice",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
+        "Root",
+        "Cake"
       ],
       {
         "isExpanded" : true,
@@ -48,34 +77,6 @@
         "Root",
         "Cake",
         "FruitCakeSlice",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
-        "Root",
-        "Cake"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
-        "Root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
-        "Root",
-        "Cake",
-        "FruitCakeSlice",
         "Geom"
       ],
       {
@@ -86,8 +87,7 @@
         "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
         "Root",
         "Cake",
-        "FruitCakeSliceTmp",
-        "Looks"
+        "FruitCakeSlice"
       ],
       {
         "isExpanded" : true,
@@ -109,36 +109,6 @@
   },
   "5753F7FA-3F9A-4238-8BFE-477E528A4E68" : {
     "objectMetadataList" : [
-      [
-        "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
-        "Root",
-        "AirForce",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
-        "Root",
-        "AirForce",
-        "Geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
-        "Root",
-        "AirForceScene",
-        "Geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
       [
         "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
         "Root",
@@ -165,6 +135,36 @@
       {
         "isExpanded" : true,
         "isLocked" : false
+      },
+      [
+        "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
+        "Root",
+        "AirForce",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
+        "Root",
+        "AirForce",
+        "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
+        "Root",
+        "AirForceScene",
+        "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
       }
     ]
   },
@@ -182,25 +182,6 @@
   },
   "AF09ED6F-1707-48FD-8720-65B998362C09" : {
     "objectMetadataList" : [
-      [
-        "AF09ED6F-1707-48FD-8720-65B998362C09",
-        "Root",
-        "Sphere_Right"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "AF09ED6F-1707-48FD-8720-65B998362C09",
-        "Root",
-        "FruitCakeSlice",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
       [
         "AF09ED6F-1707-48FD-8720-65B998362C09",
         "Root",
@@ -223,6 +204,34 @@
       [
         "AF09ED6F-1707-48FD-8720-65B998362C09",
         "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AF09ED6F-1707-48FD-8720-65B998362C09",
+        "Root",
+        "Sphere_Right"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AF09ED6F-1707-48FD-8720-65B998362C09",
+        "Root",
+        "_GridMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AF09ED6F-1707-48FD-8720-65B998362C09",
+        "Root",
+        "FruitCakeSlice",
+        "Looks"
       ],
       {
         "isExpanded" : true,
@@ -269,7 +278,9 @@
       },
       [
         "D66134B1-3681-4A8E-AFE5-29F257229F3B",
-        "Root"
+        "Root",
+        "GridMaterial",
+        "GridMaterial"
       ],
       {
         "isExpanded" : true,
@@ -277,9 +288,7 @@
       },
       [
         "D66134B1-3681-4A8E-AFE5-29F257229F3B",
-        "Root",
-        "GridMaterial",
-        "GridMaterial"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -292,7 +301,7 @@
       [
         "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
         "Root",
-        "FruitCakeSlice",
+        "FruitCakeSlice_1",
         "Geom"
       ],
       {
@@ -302,7 +311,7 @@
       [
         "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
         "Root",
-        "FruitCakeSlice",
+        "FruitCakeSliceTmp",
         "Looks"
       ],
       {
@@ -323,6 +332,16 @@
         "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
         "Root",
         "FruitCakeSliceTmp",
+        "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
+        "Root",
+        "FruitCakeSlice",
         "Looks"
       ],
       {
@@ -340,17 +359,7 @@
       [
         "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
         "Root",
-        "FruitCakeSlice_1",
-        "Geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
-        "Root",
-        "FruitCakeSliceTmp",
+        "FruitCakeSlice",
         "Geom"
       ],
       {

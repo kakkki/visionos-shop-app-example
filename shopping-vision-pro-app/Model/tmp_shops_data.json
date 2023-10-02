@@ -1,0 +1,131 @@
+[
+  {
+    "shopId": "shop_001",
+    "shopName": "Nike Shop",
+    "isFollowed": true,
+    "shopImageNames": [
+      "nikeShopImage1_url",
+      "nikeShopImage2_url"
+    ],
+    "products": [
+      {
+        "productId": "product_001",
+        "productName": "Nike Air Force 1 クラシックなデザインのスニーカー。",
+        "description": "クラシックなデザインのスニーカー。",
+        "price": 10000,
+        "productUSDZ": "AirForce",
+        "productImageNames": [
+          "AirFouce_A_001",
+          "AirFouce_A_002",
+          "AirFouce_A_003",
+          "AirFouce_A_004",
+          "AirFouce_B_001",
+          "AirFouce_B_002",
+          "AirFouce_B_003",
+          "AirFouce_B_004",
+          "AirFouce_C_001",
+          "AirFouce_C_002",
+          "AirFouce_C_003",
+          "AirFouce_C_004"
+        ]
+      },
+      {
+        "productId": "product_002",
+        "productName": "Nike Pegasus",
+        "description": "ランニングに適した軽量スニーカー。",
+        "price": 12000,
+        "productUSDZ": "PegasusTrail",
+        "productImageNames": [
+          "PegasusTrail_A_001",
+          "PegasusTrail_A_002",
+          "PegasusTrail_A_003",
+          "PegasusTrail_A_004",
+          "PegasusTrail_B_001",
+          "PegasusTrail_B_002",
+          "PegasusTrail_B_003",
+          "PegasusTrail_B_004",
+          "PegasusTrail_C_001",
+          "PegasusTrail_C_002",
+          "PegasusTrail_C_003",
+          "PegasusTrail_C_004"
+        ]
+      }
+    ]
+  },
+  {
+    "shopId": "shop_002",
+    "shopName": "Cake Bakery",
+    "isFollowed": false,
+    "shopImageNames": [
+      "cakeBakeryImage1_url",
+      "cakeBakeryImage2_url"
+    ],
+    "products": [
+      {
+        "productId": "product_003",
+        "productName": "ラムレーズンのフルーツケーキ",
+        "description": "フルーツたっぷりのケーキ。",
+        "price": 3000,
+        "productUSDZ": "FruitCakeSlice",
+        "productImageNames": [
+            "FruitCakeSlice_A_001",
+            "FruitCakeSlice_A_002",
+            "FruitCakeSlice_A_003",
+            "FruitCakeSlice_A_004",
+            "FruitCakeSlice_B_001",
+            "FruitCakeSlice_B_002",
+            "FruitCakeSlice_B_003",
+            "FruitCakeSlice_B_004"
+        ]
+      },
+      {
+        "productId": "product_004",
+        "productName": "Lemon Meringue Pie",
+        "description": "レモンクリームとメレンゲの甘酸っぱいパイ。",
+        "price": 2500,
+        "productUSDZ": "LemonMeringuePie",
+        "productImageNames": [
+          "LemonMeringuePie_A_001",
+          "LemonMeringuePie_A_002",
+          "LemonMeringuePie_A_003",
+          "LemonMeringuePie_B_001",
+          "LemonMeringuePie_B_002",
+          "LemonMeringuePie_B_003",
+          "LemonMeringuePie_C_001",
+          "LemonMeringuePie_C_002",
+          "LemonMeringuePie_C_003"
+        ]
+      }
+    ]
+  },
+  {
+    "shopId": "shop_003",
+    "shopName": "RockStore",
+    "isFollowed": true,
+    "shopImageNames": [
+      "rockStoreImage1_url",
+      "rockStoreImage2_url"
+    ],
+    "products": [
+      {
+        "productId": "product_005",
+        "productName": "Rock",
+        "description": "自然な形状の美しい岩。",
+        "price": 500,
+        "productUSDZ": "Rock",
+        "productImageNames": [
+          "Rock_A_001",
+          "Rock_A_002",
+          "Rock_A_003",
+          "Rock_B_001",
+          "Rock_B_002",
+          "Rock_B_003",
+          "Rock_C_001",
+          "Rock_C_002",
+          "Rock_C_003"
+        ]
+      }
+    ]
+  }
+]
+

@@ -47,15 +47,13 @@ struct ProductDetailScreen: View {
                         Image(imageName)
                           .resizable()
                           .aspectRatio(contentMode: .fill)
-//                          .frame(width: 400, height: 400)
-                          .frame(width: 360, height: 390)
-                        // TODO: cornerRadiusが効いてない
                           .cornerRadius(18)
+                        // TODO: cornerRadiusが効いてない
                     }
                 }
+                .cornerRadius(18)
+                .frame(width: 400, height: 400)
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
-//                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-//                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
                 
                 ScrollView {
                     // 画像一覧

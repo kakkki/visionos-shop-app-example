@@ -1,5 +1,5 @@
 //
-//  shopping_vision_pro_appApp.swift
+//  ShoppingVisionProApp.swift
 //  shopping-vision-pro-app
 //
 //  Created by Atsuki Kakehi on 2023/09/22.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct shopping_vision_pro_appApp: App {
+struct ShoppingVisionProApp: App {
     
     @State private var spaceViewModel = SpaceViewModel()
     
@@ -16,19 +16,25 @@ struct shopping_vision_pro_appApp: App {
 
     @State private var model3DSpaceViewModel = Model3DSpaceViewModel()
 
+    @State private var tabViewModel = TabViewModel()
+    
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            SampleCardListScreen()
-                .environment(spaceViewModel)
-                .environment(cubeContainerViewModel)
-                .environment(model3DSpaceViewModel)
+            TabView(selection: $tabViewModel.selectedTab) {
+                ForEach(TabViewModel.TabMenu.allCases) { tabItem in
+                    SampleCardListScreen()
+                        .environment(spaceViewModel)
+                        .environment(cubeContainerViewModel)
+                        .environment(model3DSpaceViewModel)
+                        .environment(tabViewModel)
+                        .tag(tabItem)
+                        .tabItem {
+                            Label(tabItem.title, systemImage: tabItem.imageName)
+                        }
+                }
+            }
         }
 
-//        ImmersiveSpace(id: "ProductSpace") {
-//            ImmersiveView()
-//        }
-        
 //        ImmersiveSpace(id: "ProductSpace") {
 //            ProductSpace()
 //                .environment(spaceViewModel)

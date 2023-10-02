@@ -22,9 +22,7 @@ struct Model3DSpaceView: View {
     
     func addProductEntity1(product: Product) async {
         guard entity1 == nil else { return }
-        // AirForce.usdz
         let entityAirForce = await viewModel.addEntityAsync(
-//            usdzName: "AirForce",
             usdzName: product.productUSDZ,
             entityName: "Entity1",
             posision: SIMD3(x: 0, y: 1, z: -1)
@@ -36,9 +34,7 @@ struct Model3DSpaceView: View {
 
     func addProductEntity2(product: Product) async {
         guard entity2 == nil else { return }
-        // PegasusTrail.usdz
         let entityPegasusTrail = await viewModel.addEntityAsync(
-//            usdzName: "PegasusTrail",
             usdzName: product.productUSDZ,
             entityName: "Entity2",
             posision: SIMD3(x: 0.5, y: 1, z: -1)
@@ -50,7 +46,6 @@ struct Model3DSpaceView: View {
     
     func addProductEntity3(product: Product) async {
         guard entity3 == nil else { return }
-        // PegasusTrail.usdz
         let entityPegasusTrail = await viewModel.addEntityAsync(
             usdzName: product.productUSDZ,
             entityName: "Entity3",
@@ -60,7 +55,6 @@ struct Model3DSpaceView: View {
             entity3 = entityPegasusTrail
         }
     }
-
 
     var body: some View {
 
@@ -82,16 +76,6 @@ struct Model3DSpaceView: View {
                         value.location3D, from: .local,
                         to: value.entity.parent!)
 
-//                    if value.entity.name == "FruitCakeSlice" {
-//                        entity2.position = dragLocation
-//                    }
-//                    if value.entity.name == "AirForce" {
-//                        entity1.position = dragLocation
-//                    }
-//                    if value.entity.name == "PegasusTrail" {
-//                        entity2.position = dragLocation
-//                    }
-                    
                     if value.entity.name == "Entity1" {
                         entity1.position = dragLocation
                     }

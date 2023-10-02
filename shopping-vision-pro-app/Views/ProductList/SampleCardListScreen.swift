@@ -9,15 +9,20 @@ import SwiftUI
 
 #Preview(windowStyle: .automatic) {
     SampleCardListScreen()
+        .environment(TabViewModel())
 }
 
 struct SampleCardListScreen: View {
+    
+    // MARK: shops, products
     // TODO: リファクタ
     @State var shops = ShopRepository.shared.loadShops()
     @State var navigationPathShop: [Shop] = []
 
     @State var products = ProductRepository.shared.loadProducts()
     @State var navigationPathProduct: [Product] = []
+    
+    @Environment(TabViewModel.self) private var tabViewModel
 
     // 4列のGridで表示する
     let columns = [
@@ -28,16 +33,8 @@ struct SampleCardListScreen: View {
     ]
 
     var body: some View {
-//        NavigationStack(path: $navigationPathShop) {
-//            SampleCardListScreenContents()
-//                .navigationDestination(for: Module.self) { module in
-//                    ModuleDetail(module: module)
-//                        .navigationTitle(module.eyebrow)
-//                }
-//        }
-
+        // MARK: NavigationStack
         NavigationStack(path: $navigationPathProduct) {
-//        NavigationStack(path: $navigationPathShop) {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
                     LazyVGrid(columns: columns) {
@@ -60,15 +57,14 @@ struct SampleCardListScreen: View {
                     }
                     
                     // MARK: サンプル用のStatsGrid
-                    Text("Stats").font(.title)
-                    /// ornamentを試しに使っただけ
+//                    Text("Stats").font(.title)
+//                    /// ornamentを試しに使っただけ
 //                        .ornament(attachmentAnchor: .scene(.bottom)) {
 //                            Button(action: {}, label: {
 //                                Text("top-1")
 //                            })
 //                            .glassBackgroundEffect(in: .capsule)
 //                        }
-
                     
                     StatsGrid().padding().background(.regularMaterial, in: .rect(cornerRadius: 12))
                     StatsGrid().padding().background(.thinMaterial, in: .rect(cornerRadius: 12))
@@ -80,16 +76,10 @@ struct SampleCardListScreen: View {
                 .padding(.top, 24)
                 .padding(.horizontal, 48)
             }
-            .navigationTitle("今日のおすすめ商品")
+            .navigationTitle(tabViewModel.selectedTab.title)
             .navigationDestination(for: Product.self) { product in
                 ProductDetailScreen(product: product)
                     .navigationTitle(product.productName)
-
-                
-//                StatsGrid().padding().background(.regularMaterial, in: .rect(cornerRadius: 12))
-                
-//                ModuleDetail(module: module)
-//                    .navigationTitle(module.eyebrow)
             }
         }
 //        .onAppear {

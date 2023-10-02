@@ -18,15 +18,7 @@
           "AirFouce_A_001",
           "AirFouce_A_002",
           "AirFouce_A_003",
-          "AirFouce_A_004",
-          "AirFouce_B_001",
-          "AirFouce_B_002",
-          "AirFouce_B_003",
-          "AirFouce_B_004",
-          "AirFouce_C_001",
-          "AirFouce_C_002",
-          "AirFouce_C_003",
-          "AirFouce_C_004"
+          "AirFouce_A_004"
         ]
       },
       {
@@ -83,7 +75,7 @@
         "productName": "Lemon Meringue Pie",
         "description": "レモンクリームとメレンゲの甘酸っぱいパイ。",
         "price": 2500,
-        "productUSDZ": "LemonMeringuePie",
+        "productUSDZ": "RobotWalkIdle",
         "productImageNames": [
           "LemonMeringuePie_A_001",
           "LemonMeringuePie_A_002",
