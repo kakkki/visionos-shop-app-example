@@ -24,12 +24,12 @@
 		8034B9782AC5622500D391E9 /* CubeSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8034B9772AC5622400D391E9 /* CubeSpaceView.swift */; };
 		8034B97A2AC5632D00D391E9 /* CubeContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8034B9792AC5632D00D391E9 /* CubeContainerViewModel.swift */; };
 		8034B97C2AC5688600D391E9 /* Model3DSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8034B97B2AC5688600D391E9 /* Model3DSpaceView.swift */; };
-		80795DCD2ABD1F0A00B156CD /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 80795DCC2ABD1F0A00B156CD /* RealityKitContent */; };
 		80795DCF2ABD1F0A00B156CD /* ShoppingVisionProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80795DCE2ABD1F0A00B156CD /* ShoppingVisionProApp.swift */; };
 		80795DD12ABD1F0A00B156CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80795DD02ABD1F0A00B156CD /* ContentView.swift */; };
 		80795DD32ABD1F0A00B156CD /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80795DD22ABD1F0A00B156CD /* ImmersiveView.swift */; };
 		80795DD52ABD1F0C00B156CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80795DD42ABD1F0C00B156CD /* Assets.xcassets */; };
 		80795DD82ABD1F0C00B156CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80795DD72ABD1F0C00B156CD /* Preview Assets.xcassets */; };
+		8089F11E2ACBC3EF00F4CA05 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 8089F11D2ACBC3EF00F4CA05 /* RealityKitContent */; };
 		80B908BB2AC6C1B500311E8B /* FruitCakeSlice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 80B908B92AC6C1B500311E8B /* FruitCakeSlice.usdz */; };
 		80B908BC2AC6C1B500311E8B /* AirForce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 80B908BA2AC6C1B500311E8B /* AirForce.usdz */; };
 		80B908BE2AC72ACE00311E8B /* AirForce1XCA.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 80B908BD2AC72ACE00311E8B /* AirForce1XCA.usdz */; };
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80795DCD2ABD1F0A00B156CD /* RealityKitContent in Frameworks */,
+				8089F11E2ACBC3EF00F4CA05 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +175,7 @@
 				80795DC92ABD1F0A00B156CD /* shopping-vision-pro-app */,
 				80795DCA2ABD1F0A00B156CD /* Packages */,
 				80795DC82ABD1F0A00B156CD /* Products */,
+				8089F11C2ACBC3EF00F4CA05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +221,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8089F11C2ACBC3EF00F4CA05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,7 +245,7 @@
 			);
 			name = "shopping-vision-pro-app";
 			packageProductDependencies = (
-				80795DCC2ABD1F0A00B156CD /* RealityKitContent */,
+				8089F11D2ACBC3EF00F4CA05 /* RealityKitContent */,
 			);
 			productName = "shopping-vision-pro-app";
 			productReference = 80795DC72ABD1F0A00B156CD /* shopping-vision-pro-app.app */;
@@ -521,7 +529,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		80795DCC2ABD1F0A00B156CD /* RealityKitContent */ = {
+		8089F11D2ACBC3EF00F4CA05 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
 		};

@@ -1,5 +1,81 @@
 [
   {
+    "shopId": "shop_004",
+    "shopName": "玩具屋さん",
+    "isFollowed": true,
+    "shopImageNames": [
+    "rockStoreImage1_url",
+    "rockStoreImage2_url"
+    ],
+    "products": [
+        {
+          "productId": "product_006",
+          "productName": "ドラマ人形のおもちゃ",
+          "description": "ドラマ人形のおもちゃ",
+          "price": 3000,
+          "productUSDZ": "ToyDrummerIdle",
+          "productImageNames": [
+            "ToyDrummerIdle_01",
+            "ToyDrummerIdle_02",
+            "ToyDrummerIdle_03",
+            "ToyDrummerIdle_04"
+          ]
+        },
+        {
+          "productId": "product_007",
+          "productName": "おもちゃの車",
+          "description": "おもちゃの車",
+          "price": 12000,
+          "productUSDZ": "ToyCar",
+          "productImageNames": [
+              "ToyCar_01",
+              "ToyCar_02",
+              "ToyCar_03",
+              "ToyCar_04"
+          ]
+        },
+        {
+          "productId": "product_008",
+          "productName": "ロボット人形",
+          "description": "歌って踊れるロボット人形",
+          "price": 12000,
+          "productUSDZ": "RobotWalkIdle",
+          "productImageNames": [
+              "RobotWalkIdle_01",
+              "RobotWalkIdle_02",
+              "RobotWalkIdle_03",
+              "RobotWalkIdle_04"
+          ]
+        },
+        {
+          "productId": "product_009",
+          "productName": "おもちゃの飛行機",
+          "description": "おもちゃの飛行機",
+          "price": 12000,
+          "productUSDZ": "ToyBiplaneIdle",
+          "productImageNames": [
+              "ToyBiplaneIdle_01",
+              "ToyBiplaneIdle_02",
+              "ToyBiplaneIdle_03",
+              "ToyBiplaneIdle_04"
+          ]
+        },
+        {
+          "productId": "product_010",
+          "productName": "レトロな蓄音機",
+          "description": "レトロな蓄音機",
+          "price": 12000,
+          "productUSDZ": "GramoPhone",
+          "productImageNames": [
+              "GramoPhone_01",
+              "GramoPhone_02",
+              "GramoPhone_03",
+              "GramoPhone_04"
+          ]
+        }
+      ]
+  },
+  {
     "shopId": "shop_001",
     "shopName": "Nike Shop",
     "isFollowed": true,
@@ -63,11 +139,7 @@
             "FruitCakeSlice_A_001",
             "FruitCakeSlice_A_002",
             "FruitCakeSlice_A_003",
-            "FruitCakeSlice_A_004",
-            "FruitCakeSlice_B_001",
-            "FruitCakeSlice_B_002",
-            "FruitCakeSlice_B_003",
-            "FruitCakeSlice_B_004"
+            "FruitCakeSlice_A_004"
         ]
       },
       {
@@ -79,13 +151,7 @@
         "productImageNames": [
           "LemonMeringuePie_A_001",
           "LemonMeringuePie_A_002",
-          "LemonMeringuePie_A_003",
-          "LemonMeringuePie_B_001",
-          "LemonMeringuePie_B_002",
-          "LemonMeringuePie_B_003",
-          "LemonMeringuePie_C_001",
-          "LemonMeringuePie_C_002",
-          "LemonMeringuePie_C_003"
+          "LemonMeringuePie_A_003"
         ]
       }
     ]
@@ -108,16 +174,9 @@
         "productImageNames": [
           "Rock_A_001",
           "Rock_A_002",
-          "Rock_A_003",
-          "Rock_B_001",
-          "Rock_B_002",
-          "Rock_B_003",
-          "Rock_C_001",
-          "Rock_C_002",
-          "Rock_C_003"
+          "Rock_A_003"
         ]
       }
     ]
   }
 ]
-
