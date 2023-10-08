@@ -10,11 +10,9 @@ import SwiftUI
 @main
 struct ShoppingVisionProApp: App {
     
-    @State private var spaceViewModel = SpaceViewModel()
-    
     @State private var cubeContainerViewModel = CubeContainerViewModel()
 
-    @State private var model3DSpaceViewModel = Model3DSpaceViewModel()
+    @State private var productSpaceViewModel = ProductSpaceViewModel()
 
     @State private var tabViewModel = TabViewModel()
     
@@ -22,10 +20,9 @@ struct ShoppingVisionProApp: App {
         WindowGroup {
             TabView(selection: $tabViewModel.selectedTab) {
                 ForEach(TabViewModel.TabMenu.allCases) { tabItem in
-                    SampleCardListScreen()
-                        .environment(spaceViewModel)
+                    ProductCardListScreen()
                         .environment(cubeContainerViewModel)
-                        .environment(model3DSpaceViewModel)
+                        .environment(productSpaceViewModel)
                         .environment(tabViewModel)
                         .tag(tabItem)
                         .tabItem {
@@ -35,24 +32,14 @@ struct ShoppingVisionProApp: App {
             }
         }
 
-//        ImmersiveSpace(id: "ProductSpace") {
-//            ProductSpace()
-//                .environment(spaceViewModel)
-//        }
-
-//        ImmersiveSpace(id: "ProductSpace") {
-//            SampleProductSpaceView()
-//                .environment(spaceViewModel)
-//        }
-        
-//        ImmersiveSpace(id: "ProductSpace") {
+//        ImmersiveSpace(id: "CubeSpace") {
 //            CubeSpaceView()
 //                .environment(cubeContainerViewModel)
 //        }
 
         ImmersiveSpace(id: "ProductSpace") {
-            Model3DSpaceView()
-                .environment(model3DSpaceViewModel)
+            ProductSpaceView()
+                .environment(productSpaceViewModel)
         }
     }
     

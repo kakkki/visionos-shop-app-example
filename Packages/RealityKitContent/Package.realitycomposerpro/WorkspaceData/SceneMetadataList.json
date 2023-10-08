@@ -16,9 +16,8 @@
       [
         "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
         "Root",
-        "Cake",
-        "FruitCakeSliceTmp",
-        "Looks"
+        "Cake_1",
+        "FruitCakeSlice"
       ],
       {
         "isExpanded" : true,
@@ -26,7 +25,8 @@
       },
       [
         "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
-        "Root"
+        "Root",
+        "Cake"
       ],
       {
         "isExpanded" : true,
@@ -46,27 +46,8 @@
       [
         "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
         "Root",
-        "Cake"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
-        "Root",
         "Cake",
         "FruitCakeSliceTmp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
-        "Root",
-        "Cake_1",
-        "FruitCakeSlice"
       ],
       {
         "isExpanded" : true,
@@ -88,6 +69,25 @@
         "Root",
         "Cake",
         "FruitCakeSlice"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6DDABE1B-BC78-4E7E-9789-A5F5DD04087E",
+        "Root",
+        "Cake",
+        "FruitCakeSliceTmp",
+        "Looks"
       ],
       {
         "isExpanded" : true,
@@ -113,7 +113,7 @@
         "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
         "Root",
         "AirForceScene",
-        "Looks"
+        "Geom"
       ],
       {
         "isExpanded" : true,
@@ -122,6 +122,26 @@
       [
         "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
         "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
+        "Root",
+        "AirForceScene",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
+        "Root",
+        "AirForce",
+        "Looks"
       ],
       {
         "isExpanded" : true,
@@ -140,26 +160,6 @@
         "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
         "Root",
         "AirForce",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
-        "Root",
-        "AirForce",
-        "Geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "5753F7FA-3F9A-4238-8BFE-477E528A4E68",
-        "Root",
-        "AirForceScene",
         "Geom"
       ],
       {
@@ -194,15 +194,6 @@
       },
       [
         "AF09ED6F-1707-48FD-8720-65B998362C09",
-        "Root",
-        "Sphere_Left"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "AF09ED6F-1707-48FD-8720-65B998362C09",
         "Root"
       ],
       {
@@ -221,7 +212,7 @@
       [
         "AF09ED6F-1707-48FD-8720-65B998362C09",
         "Root",
-        "_GridMaterial"
+        "Sphere_Left"
       ],
       {
         "isExpanded" : true,
@@ -236,6 +227,15 @@
       {
         "isExpanded" : true,
         "isLocked" : false
+      },
+      [
+        "AF09ED6F-1707-48FD-8720-65B998362C09",
+        "Root",
+        "_GridMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
       }
     ]
   },
@@ -243,8 +243,7 @@
     "objectMetadataList" : [
       [
         "CB766F92-EE55-4A63-9401-E7B8C009764D",
-        "Root",
-        "GridMaterial"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -252,7 +251,8 @@
       },
       [
         "CB766F92-EE55-4A63-9401-E7B8C009764D",
-        "Root"
+        "Root",
+        "GridMaterial"
       ],
       {
         "isExpanded" : true,
@@ -270,7 +270,8 @@
       [
         "D66134B1-3681-4A8E-AFE5-29F257229F3B",
         "Root",
-        "_GridMaterial"
+        "GridMaterial",
+        "GridMaterial"
       ],
       {
         "isExpanded" : true,
@@ -279,8 +280,7 @@
       [
         "D66134B1-3681-4A8E-AFE5-29F257229F3B",
         "Root",
-        "GridMaterial",
-        "GridMaterial"
+        "_GridMaterial"
       ],
       {
         "isExpanded" : true,
@@ -302,7 +302,7 @@
         "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
         "Root",
         "FruitCakeSlice_1",
-        "Geom"
+        "Looks"
       ],
       {
         "isExpanded" : true,
@@ -311,8 +311,8 @@
       [
         "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
         "Root",
-        "FruitCakeSliceTmp",
-        "Looks"
+        "FruitCakeSlice",
+        "Geom"
       ],
       {
         "isExpanded" : true,
@@ -322,44 +322,6 @@
         "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
         "Root",
         "FruitCakeSlice_1",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
-        "Root",
-        "FruitCakeSliceTmp",
-        "Geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
-        "Root",
-        "FruitCakeSlice",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
-        "Root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
-        "Root",
-        "FruitCakeSlice",
         "Geom"
       ],
       {
@@ -374,6 +336,44 @@
       {
         "isExpanded" : true,
         "isLocked" : false
+      },
+      [
+        "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
+        "Root",
+        "FruitCakeSlice",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
+        "Root",
+        "FruitCakeSliceTmp",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E16BAB31-C9CC-4E15-A99C-F71878D6AE93",
+        "Root",
+        "FruitCakeSliceTmp",
+        "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
       }
     ]
   },
@@ -382,8 +382,8 @@
       [
         "ECCB72E6-CC15-46E1-A553-AC8A0DFE6EDD",
         "Root",
-        "Cake",
-        "FruitCakeSlice"
+        "FruitCakeSlice",
+        "Looks"
       ],
       {
         "isExpanded" : true,
@@ -400,8 +400,17 @@
       [
         "ECCB72E6-CC15-46E1-A553-AC8A0DFE6EDD",
         "Root",
-        "FruitCakeSlice",
-        "Looks"
+        "Cake",
+        "FruitCakeSlice"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "ECCB72E6-CC15-46E1-A553-AC8A0DFE6EDD",
+        "Root",
+        "FruitCakeSlice"
       ],
       {
         "isExpanded" : true,
@@ -412,15 +421,6 @@
         "Root",
         "FruitCakeSlice",
         "Geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "ECCB72E6-CC15-46E1-A553-AC8A0DFE6EDD",
-        "Root",
-        "FruitCakeSlice"
       ],
       {
         "isExpanded" : true,

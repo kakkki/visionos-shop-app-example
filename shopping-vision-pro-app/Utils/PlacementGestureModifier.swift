@@ -30,11 +30,6 @@ private struct PlacementGesturesModifier: ViewModifier {
     @State private var position: Point3D = .zero
     @State private var startPosition: Point3D? = nil
 
-//    entity.position = value.convert(value.location3D, from: .local, to: contentEntity.parent!)
-//    print("debug0000 value.location3D : \(value.location3D)")
-//    print("debug0000 after convert entity.position : \(entity.position)")
-
-    
     func body(content: Content) -> some View {
         content
             .onAppear {
